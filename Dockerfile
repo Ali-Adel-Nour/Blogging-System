@@ -1,11 +1,10 @@
-FROM node:22-alpine
-
+FROM node:22-slim
 WORKDIR /app
 
 # Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install
-
+RUN npm install fastest-validator
 # Copy application code
 COPY . .
 

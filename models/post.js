@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     published: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
-    }
+    },
+
   }, {
     sequelize,
     modelName: 'Post',

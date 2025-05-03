@@ -17,6 +17,17 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false
       },
+
+      // categoryId: {
+      //   type: Sequelize.INTEGER,
+      //   allowNull: false,
+      //   references: {
+      //     model: 'Categories',
+      //     key: 'id'
+      //   },
+      //   onUpdate: 'CASCADE',
+      //   onDelete: 'SET NULL'
+      // },
       published: {
         type: Sequelize.BOOLEAN,
         defaultValue: false
